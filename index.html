@@ -3,4 +3,199 @@ layout: default
 title: Home
 ---
 
-<h1>Bagus Himawan - Game Developer/Technical Artist/Programmer</h1>
+
+
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="/assets/video/hero.webm" type="video/webm">
+  </video>
+
+  <div class="hero-overlay">
+    <h1>Bagus Himawan</h1>
+    <div class="hero-role">
+        <span class="rotating" id="role-rotator"></span>
+    </div>
+    <!-- <h2>Technical Artist · Shader & VFX <br>Programmer<br>Game Developer</h2> -->
+  </div>
+</section>
+
+<section class="content">
+
+    <section class="portfolio-tabs">
+
+        <div class="tab-buttons">
+            <button class="tab active" data-tab="games">Game Projects</button>
+            <button class="tab" data-tab="youtube">Shader/VFX showcase</button>
+        </div>
+
+        <div class="tab-content active" id="games">
+            <div class="project-list">
+
+            <div class="project">
+                <div class="project-video">
+                <iframe src="https://www.youtube.com/embed/Ey_9Qz5GFTA" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                    <h3>Undying Flower</h3>
+
+                    <div class="project-meta">
+                        <span><strong>Developer:</strong> Calcatz</span>
+                        <span><strong>Publisher:</strong> indie.io</span>
+                    </div>
+
+                    <p>Stylized narrative game — shaders, lighting, and real-time VFX</p>
+
+                    <div class="project-tags">
+                        <span>Unity</span>
+                        <span>HDRP</span>
+                        <span>Shaders</span>
+                        <span>VFX</span>
+                    </div>
+                    </div>
+                </div>
+
+            <div class="project">
+                <div class="project-video">
+                <iframe src="https://www.youtube.com/embed/vzXheA-1nlE" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                <h3>HoloHidden</h3>
+                <div class="project-meta">
+                    <span><strong>Developer:</strong> ToMoMi Games</span>
+                    <span><strong>Publisher:</strong> holoindie</span>
+                </div>
+
+                <p>Hidden puzzle game — particle system</p>
+                <div class="project-tags">
+                    <span>Unity</span>
+                    <span>URP</span>
+                    <span>VFX</span>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+        <div class="tab-content" id="youtube">
+
+            <div class="playlist-header">
+                <h3>Shader Reels 1</h3>
+                <span>YouTube Playlist</span>
+            </div>
+
+            <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PLuD9iulrB-1fzQyqNCpZZCQm8DcCf7Mln" allowfullscreen></iframe>
+            </div>
+
+            <div class="playlist-header">
+                <h3>Shader Reels 2</h3>
+                <span>YouTube Playlist</span>
+            </div>
+
+            <div class="youtube-embed">
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PLACB7M-6_joMq56zNTGAweSPvjmTYhMT5" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section class="capabilities">
+        <div class="cap-grid">
+            <div class="cap">
+                <div class="cap-icon">
+                    <!-- Realtime Rendering -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15"
+                            fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <p>Custom shaders compatile with built-in/URP/HDRP.</p>
+            </div>
+
+            <div class="cap">
+                <div class="cap-icon">
+                    <!-- Realtime Rendering -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="5" cy="7" r="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="18" cy="9" r="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="8" cy="18" r="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            <p>Particle System, VFX Graphs, flipbooks, shader-driven effects, hit impacts.</p>
+            </div>
+
+            <div class="cap">
+                <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3v6M12 15v6M3 12h6M15 12h6"
+                            fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            <p>Artist-friendly shader GUIs, debug views, pipeline automation.</p>
+            </div>
+
+            <div class="cap">
+                <div class="cap-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 14l6-6 4 4 6-6"
+                            fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+
+                </div>
+                <p>Mobile & VR friendly shaders, batching, overdraw control.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-cta">
+        <a href="/about" class="about-button">
+            <span class="about-label">Learn more about me</span>
+            <div class="about-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M4 21c0-4 4-7 8-7s8 3 8 7"
+                        fill="none" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+</section>
+
+<script>
+const roles = [
+  "Technical Artist",
+  "Shader Programmer & VFX artist",
+  "Game Developer",
+  "Programmer"
+];
+
+let index = 0;
+const rotator = document.getElementById("role-rotator");
+
+function changeRole() {
+  rotator.classList.remove("fade-in");
+
+  setTimeout(() => {
+    rotator.textContent = roles[index];
+    rotator.classList.add("fade-in");
+    index = (index + 1) % roles.length;
+  }, 300);
+}
+
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
+  });
+});
+
+changeRole();
+setInterval(changeRole, 2200);
+</script>

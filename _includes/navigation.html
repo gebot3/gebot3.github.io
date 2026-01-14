@@ -1,9 +1,21 @@
-<nav>
-  <ul class="navbar-horizontal">
+<nav class="nav">
+  <div class="nav-container">
+    <a class="nav-home" href="/" aria-label="Home"></a>
+    <div class="nav-links">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+        {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
+
+  </div>
+  <!-- <ul class="navbar-horizontal">
   {% for item in site.data.navigation %}
     <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
       {{ item.name }}
     </a></li>
   {% endfor %}
-  </ul>
+  </ul> -->
+  <div class="nav-glow"></div>
 </nav>

@@ -9,6 +9,58 @@ html, body {
   --bloom: 100, 120, 40;
 }
 
+
+.yt-lazy iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 2;
+}
+
+.yt-lazy {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.yt-lazy img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yt-lazy:not(.playing)::after {
+  content: "▶";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  color: white;
+  background: rgba(0,0,0,0.35);
+  transition: 0.3s;
+  z-index: 3;
+}
+.yt-lazy.playing::after {
+  display: none;
+}
+
+.yt-lazy:not(.playing):hover::after {
+  background: rgba(0,0,0,0.6);
+  transform: scale(1.1);
+}
+
+.yt-lazy:hover::after {
+  background: rgba(0,0,0,0.6);
+  transform: scale(1.1);
+}
+
 .tab-content {
   pointer-events: none;
 }

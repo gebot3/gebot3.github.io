@@ -33,7 +33,7 @@ title: Bagus Himawan - Technical Artist
 
             <div class="project">
                 <div class="project-video">
-                <iframe src="https://www.youtube.com/embed/Ey_9Qz5GFTA" allowfullscreen></iframe>
+                <div class="yt-lazy" data-id="Ey_9Qz5GFTA"></div>
                 </div>
                 <div class="project-info">
                     <h3>Undying Flower</h3>
@@ -56,7 +56,7 @@ title: Bagus Himawan - Technical Artist
 
             <div class="project">
                 <div class="project-video">
-                <iframe src="https://www.youtube.com/embed/vzXheA-1nlE" allowfullscreen></iframe>
+                <div class="yt-lazy" data-id="vzXheA-1nlE"></div>
                 </div>
                 <div class="project-info">
                 <h3>HoloHidden</h3>
@@ -86,7 +86,7 @@ title: Bagus Himawan - Technical Artist
             </div>
 
             <div class="youtube-embed">
-                <iframe src="https://www.youtube.com/embed/videoseries?list=PLuD9iulrB-1fzQyqNCpZZCQm8DcCf7Mln" allowfullscreen></iframe>
+                <div class="yt-lazy" data-playlist="PLuD9iulrB-1fzQyqNCpZZCQm8DcCf7Mln"></div>
             </div>
 
             <div class="playlist-header">
@@ -95,7 +95,7 @@ title: Bagus Himawan - Technical Artist
             </div>
 
             <div class="youtube-embed">
-                <iframe src="https://www.youtube.com/embed/videoseries?list=PLACB7M-6_joMq56zNTGAweSPvjmTYhMT5" allowfullscreen></iframe>
+                <div class="yt-lazy" data-playlist="PLACB7M-6_joMq56zNTGAweSPvjmTYhMT5"></div>
             </div>
 
         </div>
@@ -167,6 +167,35 @@ title: Bagus Himawan - Technical Artist
 </section>
 
 <script>
+
+document.querySelectorAll(".yt-lazy").forEach(el => {
+  const id = el.dataset.id;
+  const playlist = el.dataset.playlist;
+
+  const thumb = document.createElement("img");
+
+  if (id) {
+    thumb.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  } else {
+    thumb.src = `https://i.ytimg.com/vi/0/hqdefault.jpg`;
+  }
+
+  el.appendChild(thumb);
+
+  el.addEventListener("click", () => {
+    let src = "";
+
+    if (id) {
+      src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+    } else {
+      src = `https://www.youtube.com/embed/videoseries?list=${playlist}&autoplay=1`;
+    }
+    el.classList.add("playing");
+    el.style.cursor = "default";
+    el.innerHTML = `<iframe src="${src}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+  });
+});
+
 const roles = [
   "Technical Artist",
   "Shader Programmer & VFX artist",

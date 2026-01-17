@@ -1,0 +1,33 @@
+shader_vfx:
+  - id : 39hvcdZ4P_Y
+    title : Ground Splash Particles
+  - id : KUXm9FkjOZ8
+    title : Pixel Toon Stylized Looks
+  - id : jdzkDMBrqOg
+    title : Magma Attack VFX
+  - id : zub9Vis97dU
+    title : World Reveal Shader
+  - id : 9OfQ62E-94A
+    title : Orthographic Stylized Shader & Orthographic Decals Shader
+  - id : I7WZVknjE58
+    title : 2D Ice Shader
+  - id : sDeY9aRj6N4
+    title : 2D Grass And Trees Shader
+  - id : E6Z2RmBPGPA
+    title : Fireworks VFX and Launch System
+  - id : tIOpFBtpGJU
+    title : 2D Fire Shader
+  - id : Zy5CSdat5nM
+    title : Fire Extinguisher VFX
+  - id : YjUF1mJ5lO8
+    title : Cloud Shader
+  - id : dDWKiT8aoX8
+    title : 2D Stylized-Shader
+  - id : jhYQ5sgK69s
+    title : Burning Dissolve Shader
+  - id : uBsIHe3RN9I
+    title : Additive Scene loading for large unity tilemap
+  - id : yfysWH6azsA
+    title : 2D Water Shader
+  - id : pty-GXRCmbE
+    title : Weapon Aura Particles

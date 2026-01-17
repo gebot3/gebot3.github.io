@@ -26,6 +26,7 @@ title: Bagus Himawan - Technical Artist
         <div class="tab-buttons">
             <button class="tab active" data-tab="games">Game Projects</button>
             <button class="tab" data-tab="youtube">Shader/VFX showcase</button>
+            <button class="tab" data-tab="tools">Tools</button>
         </div>
 
         <div class="tab-content active" id="games">
@@ -80,22 +81,13 @@ title: Bagus Himawan - Technical Artist
 
         <div class="tab-content" id="youtube">
 
-            <div class="playlist-header">
-                <h3>Shader Reels 1</h3>
-                <span>YouTube Playlist</span>
-            </div>
-
-            <div class="youtube-embed">
-                <div class="yt-lazy" data-playlist="PLuD9iulrB-1fzQyqNCpZZCQm8DcCf7Mln"></div>
-            </div>
-
-            <div class="playlist-header">
-                <h3>Shader Reels 2</h3>
-                <span>YouTube Playlist</span>
-            </div>
-
-            <div class="youtube-embed">
-                <div class="yt-lazy" data-playlist="PLACB7M-6_joMq56zNTGAweSPvjmTYhMT5"></div>
+            <div class="rd-grid">
+            {% for vid in site.data.rd.shader_vfx %}
+                <div class="rd-item">
+                <div class="yt-lazy" data-id="{{ vid.id }}"></div>
+                <div class="rd-title">{{ vid.title }}</div>
+                </div>
+            {% endfor %}
             </div>
 
         </div>

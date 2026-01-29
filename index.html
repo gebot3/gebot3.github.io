@@ -122,6 +122,17 @@ title: Bagus Himawan - Technical Artist
 
         </div>
 
+        <div class="tab-content" id="tools">
+            <div class="rd-grid">
+                {% for vid in site.data.tools.tools %}
+                    <div class="rd-item">
+                        <div class="yt-lazy" data-id="{{vid.id}}"></div>
+                        <div class="rd-title">{{vid.title}}</div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
     </section>
     
     <section class="capabilities">
